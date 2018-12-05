@@ -1,0 +1,22 @@
+/* Aula 0 Como trabalhar HTML no CSS*/
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    }
+.destaque { /*Criamos uma CLASSE no HTML para centralizar somente as tags o H1 e P do html    */
+    /*No momento em que se coloca um (.destaque) PONTO aqui no CSS , vc diz "que é para buscar uma CLASSE com tem o nome  DESTAQUE no HTML" 
+    lá no H1 e na tag P, colocaremos uma CLASS
+    */
+    text-align: center;
+
+}
+
+ h1, h2 { /*VINCULAMOS 2 ELEMENTOS  H1 e H2 do HTML para ter a mesma cor, simplesmente separando eles com uma (,) VIRGULA desde que só HAJA a mesma configuração para todos*/
+     
+   color: rgba(70, 130, 180, 1);    
+}
+
+

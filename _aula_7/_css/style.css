@@ -1,0 +1,25 @@
+/* Aula 07 Como trabalhar com cores no HTML*/
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    
+}
+h1 {
+     /* Existem 4 forma de defirnimos as cores:  */
+    color: steelblue;  /* Por nome*/
+    color: #4682B4;  /*por Hexadecimal*/
+    color: rgb(70, 130, 180);  /* pelo RGB*/
+    color: rgba(70, 130, 180, 1);  /* RGBA sendo o A o canal ALFA é atx de transparencia*/
+
+    
+    /*Aula 07 o COLOR É o atributo para trarmos cores, site de cores na Arquivo README.TXT */ 
+    /*Abrimos uma H1 para dar COR somente no H1, desta forma tudo que for H1 ficará azul e o restante preto  */
+   
+
+    
+}
+
+
