@@ -1,0 +1,25 @@
+/* Aula 9 Para que serve o elemento "DIV" no HTML?*/
+/*Criamos a DIVs para fazermos divisões em forma de BLOCOS ou  CONTEINERS
+com isto  conseguimos mudar posições ou editar um grupo de ELEMENTOS*/
+
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    }
+.destaque {    
+    text-align: center;
+}
+ h1, h2 {      
+   color: rgba(70, 130, 180, 1);    
+}
+
+.left, .right, .center { /*Conf. todas as 3 DIVS como se fosse 1 só ELEMENTO*/
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.rodape {
+    text-align: center;
+}

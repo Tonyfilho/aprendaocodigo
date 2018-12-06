@@ -1,0 +1,40 @@
+/* Aula 10 O que são e como usar "Margin" e "Padding" no HTML?*/
+/*Criamos a DIVs para fazermos divisões em forma de BLOCOS ou  CONTEINERS
+com isto  conseguimos mudar posições ou editar um grupo de ELEMENTOS além de pormos MARGENS e PADDING individuais ou iguais para cada DIV
+
+*/
+
+
+
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    }
+.destaque {    
+    text-align: center;
+}
+ h1, h2 {      
+   color: rgba(70, 130, 180, 1);    
+}
+
+.left, .right, .center { /*Conf. todas as 3 DIVS como se fosse 1 só ELEMENTO*/
+    background-color: rgba(0, 0, 0, .3); 
+    margin: 10px 20px 30px 40px;
+    /* margin-bottom: 10px; aqui conf. a margem BOTTON  */
+    /* margin-top: 10px;   aqui conf. a margem  do TOPO */
+    /* margin-left: 10px; aqui conf a margem da ESQUERDA */
+    /* margin-right: 10px;  aqui conf a margem da DIREITA */
+    /* margin: 10px auto; aqui conf. com 10PX as Margens de TOP e BOTTOM juntas e como AUTOMATICO as margens RIGHT e LEFT  */
+
+    /*OBS: Nestes  caso quando definimos um lado, somente informamos 1 numero   */
+    padding: 10px 20px; /*temos aqui uma margem superior e inferior da UL e da DIV com isto se pormos 20px para todos os lados , o TOP e o BOTTON ficarão com 40px cada, colocando somente 10PX elas ficarão com 20px somento as margens do UL */
+
+    /* PADDIN  é o espaçamento dos objetos que estão dentro do CONTEINER E Tem as mesma REGRAS de configuração */
+
+}
+.rodape {
+    text-align: center;
+}
