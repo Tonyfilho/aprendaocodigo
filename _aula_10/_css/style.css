@@ -1,7 +1,7 @@
-/* Aula 9 Para que serve o elemento "DIV" no HTML?*/
-/*Criamos a DIVs para fazermos divisões em forma de BLOCOS ou  CONTEINERS
-com isto  conseguimos mudar posições ou editar um grupo de ELEMENTOS*/
+/* Aula 10 O que são e como usar "Margin" e "Padding" no HTML?*/
 
+
+/* PADDIN  é o espaçamento dos objetos que estão dentro do CONTEINER ou de um ELEMENTO, e Tem as mesma REGRAS de configuração do MARGIM */
 @charset "UTF8";
 @import URL('https://fonts.googleapis.com/css?family=Roboto'); 
 
@@ -17,9 +17,24 @@ body {
 }
 
 .left, .right, .center { /*Conf. todas as 3 DIVS como se fosse 1 só ELEMENTO*/
-    background-color: rgba(0, 0, 0, .3);
-}
+    background-color: rgba(0, 0, 0, .3); 
+    margin: 20px 40px; /* Desta forma colocamos que TOP/BOTTON é 20px e RIGHT e LEFT 40px */
+    /* margin-bottom: 10px; aqui conf. a margem BOTTON  */
+    /* margin-top: 10px;   aqui conf. a margem  do TOPO */
+    /* margin-left: 10px; aqui conf a margem da ESQUERDA */
+    /* margin-right: 10px;  aqui conf a margem da DIREITA */
+    /* margin: 10px auto; aqui conf. com 10PX as Margens de TOP/BOTTOM juntas e como AUTOMATICO as margens RIGHT/LEFT  */
 
+    /*OBS: Nestes  caso quando definimos um LADO, somente informamos 1 numero   */
+    padding: 10px 20px; /*temos aqui uma margem superior e inferior da UL e da DIV com isto se pormos 20px para todos os lados , o TOP e o BOTTON ficarão com 40px cada, colocando somente 10PX elas ficarão com 20px somento as margens do UL */
+    width: 250px; 
+    /* OBS.: OS ELEMENTOS DIV.LEFT.RIGHT.CENTER são divs padrões, SE NÃO informarmos o WIDTH ele por padrão USARÁ a LARGURA do elemento PAI que é o DIV#CORPO assim funciona para todos  */
+
+    line-height: 1.3;  /*Criamos um espaço emtre as linhas do texto de 1.3 x o tamanho da FONTE desta forma conf. a ALTURA entre a linha, sendo que 1.3 é um numero RELATIVO e não ABSOLUTO */
+    /* EXITE um distância que determina a distância de uma AlTURA de uma linha quando ela QUEBRA, como temos 3 tags LI q são elementos distintos então existe uma margem PADRÂO entre as tags LI um TOP e outra BOTTON  */
+
+
+}
 .rodape {
     text-align: center;
 }
