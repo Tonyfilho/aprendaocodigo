@@ -19,7 +19,12 @@ DISPLAY=BLOCK; fluidex vertical é o padrão.
 
 DISPLAY=INLINE; fluidex horizontal, para alteração de TEXTOS.
 
-DISPLAY=INLINE-BLOCK fluidex horizontal, para alteração de BLOCOS. Quer dizer: Existe um ELEMENTO que é um BLOCO que será definido a WIDTH e HEIGHT que nos já definimos. Ele fluirá como se fosse um texto. Ou seja ele ficará INLINE não somente o TEXTO dentro do ELEMENTO mas TB o BLOCO. O mesmo irá ficar alinhado pelo BAIXO, caso haja Diferênça de autura , a diferênça ficará aparente na parte de  cima.
+DISPLAY=INLINE-BLOCK fluidex horizontal, para alteração de BLOCOS. Quer dizer: Existe um ELEMENTO que é um BLOCO que será definido a WIDTH e HEIGHT que nos já definimos. Ele fluirá como se fosse um texto. Ou seja ele ficará INLINE não somente o TEXTO dentro do ELEMENTO mas TB o BLOCO. O mesmo irá ficar alinhado pelo BAIXO ou seja pela BASE, caso haja Diferênça de altura , a diferênça ficará aparente na parte de  cima. Quem governa isto é o paramentro alinhamento vertical que é VERTICAL-ALIGN que é o PADRÂO do DISPLAY=INLINE-BLOCK .
+
+VERTICAL-ALIGN: BOTTOM; É o PADRÂO do DISPLAY=INLINE-BLOCK .
+VERTICAL-ALIGN: TOP; O TOP É  a propriedade para que seja alinhado pelo TOPO
+
+
 
 
 
