@@ -1,0 +1,31 @@
+/* Aula 11 Entendendo como o navegador lê o nosso código HTML*/
+
+
+
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    }
+.destaque {    
+    text-align: center;
+}
+ h1, h2 {      
+   color: rgba(70, 130, 180, 1);    
+}
+
+.left, .right, .center { 
+    background-color: rgba(0, 0, 0, .3); 
+    margin: 20px 40px; 
+
+    
+    padding: 10px 20px; 
+    width: 250px; 
+    line-height: 1.3;  
+
+}
+.rodape {
+    text-align: center;
+}
