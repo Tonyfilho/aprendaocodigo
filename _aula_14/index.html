@@ -1,4 +1,4 @@
-<!-- Aula 11 Entendendo como o navegador lê o nosso código HTML-->
+<!-- Aula 14 Como funciona o Float no HTML (1a. parte)-->
 
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aula 11 Entendendo como o navegador lê o nosso código HTML</title>
+    <title>Aula 14 Entendendo como funciona o Float no HTML (1a. parte)</title>
     <link rel="stylesheet" href="_css/nomalize.css">
     <link rel="stylesheet" href="_css/style.css">
     <script  src="_js/" ></script>
@@ -18,7 +18,8 @@
 
     <h1 class="destaque">Olá, Mundo!</h1> 
 
-    <p class="destaque">Entendendo como o navegador lê o nosso código HTML:</p> 
+    <p class="destaque">Como funciona o Float no HTML (1a. parte):</p> 
+          <div id="conteiner">
             <div class="left">
             
                    <h2>###HTML e CSS são linguagens de conteúdo</h2>                    
@@ -30,6 +31,16 @@
                   </li> 
                   </ul> 
             </div> 
+              <!-- /*Para usar o  FLOAT.RIGHT e termo o resultado que queremos, teremos que MUDAR a ordem das CLASS no HTML, ficando LEFT, RIGHT e depois CENTER. Para melhor entende, inspecione o elemento no Chrome, isto acontece por que o FLOAT não usa o elemento PAI como referência, e sim o elemento ANTERIOR, ou seja o FLOAT vai fazer o elemento RIGHT usar a referência do elemento LEFT e não o CENTER, com isto ele ficará alinhando para lado DIREITO com o LEFT */  -->
+            <div class="right">
+              <h2>###O CSS formata os elementos</h2>            
+                    <ul> 
+                        <li>O CSS tem seus próprios atributos </li> 
+                            <li>Vários atributos podem ser agrupados para cada classe ou elemento HTML </li> 
+                            <li>Um elemento pode ter uma ou mais classes CSS </li> 
+                        </li>   
+                      </ul> 
+            </div>
             
             <div class="center">
                     <h2>###O HTML trabalha com elementos</h2>            
@@ -41,15 +52,8 @@
                   </ul> 
             </div>
 
-            <div class="right">
-                    <h2>###O CSS formata os elementos</h2>            
-                 <ul> 
-                     <li>O CSS tem seus próprios atributos </li> 
-                        <li>Vários atributos podem ser agrupados para cada classe ou elemento HTML </li> 
-                        <li>Um elemento pode ter uma ou mais classes CSS </li> 
-                    </li>   
-                  </ul> 
-            </div>    
+            
+          </div>    
   </div>    
   <footer class="rodape">
       <p>By Tony Filho </p>
