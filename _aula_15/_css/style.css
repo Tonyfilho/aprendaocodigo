@@ -1,0 +1,45 @@
+/*  Aula 14 Como funciona O FLOAT*/
+
+
+
+@charset "UTF8";
+@import URL('https://fonts.googleapis.com/css?family=Roboto'); 
+
+body {
+    
+    font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+    }
+
+.destaque {    
+    text-align: center;
+}
+ h1, h2 {      
+   color: rgba(70, 130, 180, 1);    
+}
+
+div#conteiner { /*Tudo que for PADRÂO não há necessidade de por, pois já carrega automaticamente*/
+
+    background-color: rgba(0, 0, 0, .3);/* invertemos as cores para exemplificar como o flex funciona dentro das CAIXAS */
+    
+    
+}
+.left, .right, .center { 
+    background-color: rgba(255,255,255, 1);  /* invertemos as cores para exemplificar como o flex funciona dentro das CAIXAS */
+    margin: 20px auto;   /*Para centralizar uma ELEMENTO VERTICALMENTE no CENTRO temos que por nossas MARGENS DIREITA/ESQUERDA como AUTOMATICO, com isto as CAIXAS .left, .right, .center ficarão no centro. Com isto ele CRIA 2 margens IQUAIS e com isto nosso elemento centralizará automaticamente  */  
+    padding: 10px 20px; 
+    width: 250px; 
+    line-height: 1.3;  
+}
+.left { /*Com o uso do FLOAT, temos que separar as DIVS e darmos paramentros para a que fica a esquerda e depois abaixo a da direita */
+    float: left;
+
+}
+.right { /*Para usar o  FLOAT.RIGHT e termo o resultado que queremos, teremos que MUDAR a ordem das CLASS no HTML, ficando LEFT, RIGHT e depois CENTER. Para melhor entende, inspecione o elemento no Chrome, isto acontece por que o FLOAT não usa o elemento PAI como referência, e sim o elemento ANTERIOR, ou seja o FLOAT vai fazer o elemento RIGHT usar a referência do elemento LEFT e não o CENTER, com isto ele ficará alinhando para lado DIREITO com o LEFT  por isto tivemos que mudar a order no HTML */
+    
+    float: right;
+    /* Aqui já vemos uns dos problemas  FLOAT, se não pormo lá no HTML na ordem definida acima não conseguiremos o alinhamento.  */
+}
+
+.rodape {
+    text-align: center;
+}
