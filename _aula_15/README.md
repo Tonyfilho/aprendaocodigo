@@ -1,18 +1,38 @@
 # standard padrões para estudo em HTML e CSS e JS
 
-Como funciona o Float no HTML (1a. parte)
+Como funciona o Float no HTML (2a. parte)
 
-No video anterior vimos como usar a propriedade DISPLAY:FLEX; para  modificar a propriedade de ALINHAMENTO e FLUIDES do elementos dentro do nosso documento HTML .
+No video anterior vimos como usar a propriedade do float para  modificar a propriedade de ALINHAMENTO e FLUIDES do elementos dentro do nosso documento HTML .
 
-Neste video aprenderemos usar uma propriedade chamada FLOAT, ele  é uma propriedade que permite alinhar um documento e um fluxo mas de uma forma muito mais limitada, que vimos com a propriedade display ate agora.
+Na aula anterior  vimos que o nossos elementos  da "ESQUERDA E DA DIREITA" tem escapado do espaço que temos na nossa CAIXA com a ID#CONTEINER . Lembrando que nosso CONTEINER não tem margem em relação ao elemento PAI.
 
-O FLOAT exige uma maior compreensão de como funciona. E aprender as ARMADINHAS  que ele causa na nossa paginas em relação aos outros elementos que estão ao redor dele.
+Inspecionando nosso  elemento pela aula 14, veremos que a nossa DIV centro tem a mesma ALTURA da DIV com a ID#CONTEINER, por isto que n/ temos a MARGEM q tinhamos ANTES na aula 13 com o FLEX.
 
-O FLOAT já era usado desde os antigos navegadores, por não haver na época as propriedades DISPLAY. Apesar de ANTIGO é considerado uma opção universal, visto que é aceito nos antigos navegadores e no novos.
+Inspecionando nosso  elemento pela aula 14, vemos tb que as caixas esquerda e direita são maiores do que a caixa do centro, ou seja nosso conteiner tem a altura da caixa central e a da esquerda e direita são maiores.
 
-O FLOAT é a propriedade criada para por TEXTOS ENTRE FOTOS E FOTOS ENTRE TEXTO , ou seja : Por uma foto a direita e o texto a esquerda, ou por um texto a direita e a foto a esquerda, fazendo o texto correr entre as  imagens.  Tudo isto aplicando o conceito de CAIXAS usando as DIVS. Fazendo uma foto alinhar com o TEXTO a DIREITA ou ESQUERDA com a mesma flutuação e alinhamento. Para isto que O FLOAT foi criado.
+Neste caso, nós podemos definir como  este elementos irão aparecer. Podemos definir se queremos que estes elementos apareçam completamente, ou parte dele, ou se mostraremos somente a parte visível deste elemento.
 
-O FLOAT somente alinha um ELEMENTO OU A DIREITA OU A ESQUERDA, nunca ao CENTRO.
-Quando usamos o FLOAT? Quando precisamo alinhar texto e fotos, e o texto correr entre este elementos. OU em caso onde os ELEMENTOS  dividem um site partes como se fosse ETIQUETAS, como : HEADER, SELECT, ASIDE, FLOOTER . Ouy seja o CABEÇALHO, UMA BARRA LATERAL, UMA CAIXA PRINCIPAL A DIREITA DA BARRA, ou seja 2 elementos na mesma altura um com EX. 10x20 e outro por 40x20 . Cada um dele alinhado mas com tamanhos diferentes.
+Podemos imaginar que nosso conteiner seja uma janela, em que somente podemos ver uma parte do conteudo. Podemos ter uma BARRA de ROLAGEM na lateral ou podemos dizer que a altura do elemento pai seja sulficiente para que as caixas caibam dentro. Para alterarmos isto usaremos uma PROPRIEDADE CHAMADA OVERFLOW.
 
-no nosso exemplo do index, temos 3 elementos  sendo que o do meio, já fica centralizado. Olhe no Index da aula 13. Se conseguirmos por um elemento a ESQUERDA e outro no CENTRO e por ultimo um há DIREITA tb estaremos centralizando nas caixas usando  O FLOAT, mas de forma limitada.
+
+OVERFLOW:HIDDEN; :/*  Faz com que fique escondido  diferença de tamanho das CAIXAS com isto AUMENTARÁ tamanho da caixa. Ele usará a referencia da MAIOR caixa. HIDDEN vai fazer os elementos caibam na altura DEFINIDA do elemento PAI. Caso n seja definida o NAVEGADOR automaticamente dinirá um altura SUFICIENTE para mostrar todos elementos  .  */
+
+OVERFLOW:HIDDEN; Fará mais sentido se definimos uma altura para nosso CONTEINER
+
+OVERFLOW:SCROW; Cria uma barra de rolagem para elementos .
+OVERFLOW:AUTO; É uma auternacia entre a opção HIDDEN e SCROW, nomemente aparece somente o SCROW LATERAL.
+
+Neste caso quando usamos FLOAT, temos que criar uma MARGEM esqueda para elemmento esquerdo e uma margem direita para elemento direito.
+
+Mesmo Configurando e ficando próximo do FLEX, quando diminuimos ou usamos varios tamanhos de Pagina veremos os problemas que FLOAT acumula. Com isto veremos as DISTÂNCIAS configuradas do FLOAT se perderem. A medida dos texto primeiro e depois as caixas, assim que as paginas diminuem.
+
+Quando formos trabalhar com designer e tamanho de tela, tipo celular de tablet e outros  veremos os problemas fo FLOAT.
+
+
+
+
+
+
+
+
+

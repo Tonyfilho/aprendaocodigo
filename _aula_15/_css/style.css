@@ -18,9 +18,9 @@ body {
 }
 
 div#conteiner { /*Tudo que for PADRÂO não há necessidade de por, pois já carrega automaticamente*/
-
     background-color: rgba(0, 0, 0, .3);/* invertemos as cores para exemplificar como o flex funciona dentro das CAIXAS */
-    
+    overflow: hidden; /* Faz com que fique escondido  diferença de tamanho das CAIXAS com isto AUMENTARÁ tamanho da caixa. Ele usará a referencia da MAIOR caixa. Caso a caixa seja MENOR o elemento FILHO ficará OCULTO podendo assim pormos uma barra de ROLAGEM */
+    /* height: 320px; */
     
 }
 .left, .right, .center { 
@@ -29,15 +29,18 @@ div#conteiner { /*Tudo que for PADRÂO não há necessidade de por, pois já car
     padding: 10px 20px; 
     width: 250px; 
     line-height: 1.3;  
+    height: 275px; /*Colocamos uma altura nas CAIXAS para todas fiquem IGUAIS em ALTURA*/
 }
 .left { /*Com o uso do FLOAT, temos que separar as DIVS e darmos paramentros para a que fica a esquerda e depois abaixo a da direita */
     float: left;
+    margin-left: 10%;
 
 }
 .right { /*Para usar o  FLOAT.RIGHT e termo o resultado que queremos, teremos que MUDAR a ordem das CLASS no HTML, ficando LEFT, RIGHT e depois CENTER. Para melhor entende, inspecione o elemento no Chrome, isto acontece por que o FLOAT não usa o elemento PAI como referência, e sim o elemento ANTERIOR, ou seja o FLOAT vai fazer o elemento RIGHT usar a referência do elemento LEFT e não o CENTER, com isto ele ficará alinhando para lado DIREITO com o LEFT  por isto tivemos que mudar a order no HTML */
     
     float: right;
     /* Aqui já vemos uns dos problemas  FLOAT, se não pormo lá no HTML na ordem definida acima não conseguiremos o alinhamento.  */
+    margin-right: 10%;
 }
 
 .rodape {
