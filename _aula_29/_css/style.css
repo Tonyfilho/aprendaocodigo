@@ -1,0 +1,12 @@
+/* Listagem de fontes padrões internas de site no arquivo README.TXT da aula */
+@charset "UTF8";
+/* @import URL('https://fonts.googleapis.com/css?family=Roboto'); Importação de FONTES pelo GOOGLE*/
+
+/* formatação BÁSICA DO SITE so corpo do site  */
+body {
+    background-color: rgba(44 , 62, 80, 1); /*Azul do fundo*/
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans",sans-serif;
+    color: rgba(234, 238, 239, 1); /*Usamos um COR CINZA CLARO do texto,  próxima do branco mas NÂO o Branco, pois o branco É muito contranstante,chama muito atenção causando pouca visibilidade, e faz com que as pessoas não leêm as letras menores.  */
+}
+
+
