@@ -28,7 +28,7 @@ Para isto temos que alterarmos algumas coisa no nosso BACKGROUND
 
 4º BACKGROUND-REPEAT:NO-REPEAT; O  background-repeat: no-repeat; Com isto acabamos com as repetições .
 
-5º BACKGROUND-SIZE: COVER;  O background-size: cover; faz com que a imagem cubra todo backgroud .
+5º BACKGROUND-SIZE: 100% 100%;  /*faz com que a imagem cubra todo backgroud 100% do TOP/BOTTOM e  100%  do LEFT/RIGHT*/
 
 6º BACKGROUND-ATTACHMENT: FIXED;  background-attachment: fixed;  fixamos a imagem no fundo do site, ou seja quando dermos um SCROW com mouse a IMAGEM ficará parada e o site 
 

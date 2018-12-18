@@ -15,7 +15,7 @@ body {
     background: url(https://img.youtube.com/vi/GvbzrqD_kno/maxresdefault.jpg); 
     background-position: center center; /*Centralizaremos a nossa imagem na ALTURA E LARGURA, ele vai centralizar na largura e altura */
     background-repeat: no-repeat; /*Com isto acabamos com as repetições */
-    background-size: cover; /*faz com que a imagem cubra todo backgroud */
+    background-size: 100% 100%; /*faz com que a imagem cubra todo backgroud 100% do TOP/BOTTOM e  100%  do LEFT/RIGHT*/
     background-attachment: fixed; /*Aqui fixamos a imagem no fundo do site, ou seja quando dermos um SCROW com mouse a IMAGEM ficará parada e o site */
     height: 100vh; /*Definiremos um VH uma ALTURA de 100% do nosso VIEW RATE, ou seja 100% da tela vista por nosso olhos. */
 }
