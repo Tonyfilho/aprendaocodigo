@@ -1,0 +1,33 @@
+/* AULA DESCRITA  no arquivo README.TXT de cada  aula */
+@charset "UTF8";
+/* @import URL('https://fonts.googleapis.com/css?family=Roboto'); Importação de FONTES pelo GOOGLE*/
+
+/* formatação BÁSICA DO SITE so corpo do site  */
+body {
+    background-color: rgba(44 , 62, 80, 1); /*Azul do fundo*/
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans",sans-serif;
+    color: rgba(234, 238, 239, 1); /*Usamos um COR CINZA CLARO do texto,  próxima do branco mas NÂO o Branco, pois o branco É muito contranstante,chama muito atenção causando pouca visibilidade, e faz com que as pessoas não leêm as letras menores.  */
+    margin: 0px;
+}
+.chamada {
+    /*width:  não  DEFINIREMOS  o WIDTH pois ele será definido AUTOMATICAMENTE pelo navegador */
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.9)), url(https://img.youtube.com/vi/GvbzrqD_kno/maxresdefault.jpg);
+    /* background: url(https://img.youtube.com/vi/GvbzrqD_kno/maxresdefault.jpg);  Podemos usar somente o BACKGROUND,mas  o certo é usar o paramentro*/
+    /* background-image: linear-gradient(red,green,blue); POdemos tb por cores como se fosse IMAGENS*/
+    background-position: center center; /*Centralizaremos a nossa imagem na ALTURA E LARGURA, ele vai centralizar na largura e altura */
+    background-repeat: no-repeat; /*Com isto acabamos com as repetições */
+    background-size: 100% 100%; /*faz com que a imagem cubra todo backgroud 100% do TOP/BOTTOM e  100%  do LEFT/RIGHT*/
+    background-attachment: fixed; /*Aqui fixamos a imagem no fundo do site, ou seja quando dermos um SCROW com mouse a IMAGEM ficará parada e o site */
+    height: 100vh; /*Definiremos um VH uma ALTURA de 100% do nosso VIEW RATE, ou seja 100% da tela vista por nosso olhos. */
+    /* background-image: linear-gradient(rgba(0,0,0,.4)gba(0,0,0,.9 ) url(https://img.youtube.com/vi/GvbzrqD_kno/maxresdefault.jpg) ); */
+    
+}
+footer#rodape {
+    border-top: 1px solid rgba(234, 238, 239, 1);
+    margin-top: auto;
+    font-size: 8pt;
+    text-align: center;
+}
+
+
+

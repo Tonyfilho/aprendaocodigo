@@ -1,0 +1,56 @@
+/* AULA DESCRITA  no arquivo README.TXT de cada  aula */
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700'); /*FONTES pelo GOOGLE*/
+
+/* formatação BÁSICA DO SITE so corpo do site  */
+body {
+    background-color: rgba(44 , 62, 80, 1); 
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Bitstream Vera Sans",sans-serif;
+    color: rgba(234, 238, 239, 1); 
+    margin: 0px;
+}
+.chamada {
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.9)), url(https://img.youtube.com/vi/GvbzrqD_kno/maxresdefault.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed; 
+    height: 100vh; 
+    display: flex; /*colocamos um display aqui, para configurar o HEADER.area_chamada, fazendo ele flutuar  dentro do nosso SECTION */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+/*  Centralizaremos os textos do nosso HEADER  */
+.area_chamada {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 150px;
+}
+/* Configuraremos os tamanhos dos nosso textos */
+.titulo, .subtitulo {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    line-height: 1em; 
+    font-weight: 400;
+    text-shadow: 3px 3px 0px rgba(0,0,0,.8);
+}
+.titulo {
+    /* font-size: 400%; escrever % ou EM são a mesma coisa  */
+    font-size: 3.5em;
+}
+.subtitulo {
+    font-size: 3em;
+}
+/*  Configuração do nossos textos */
+h2 {
+    margin: 0px;
+}
+footer#rodape {
+    border-top: 1px solid rgba(234, 238, 239, 1);
+    margin-top: auto;
+    font-size: 8pt;
+    text-align: center;
+}
+
+
+
