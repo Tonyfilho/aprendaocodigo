@@ -9,16 +9,16 @@ body {
     color: rgba(234, 238, 239, 1); 
     margin: 0px;
 }
-.fonte350 {  /*Colocamos aqui blocos para configurar "SUBCLASSES" do h2 chamada FONTE350 */
+.fonte350 { 
     font-size: 3.5em;
 }
-.fonte300 {  /*Colocamos aqui blocos para configurar "SUBCLASSES" do h2 chamada FONTE300 */
+.fonte300 { 
     font-size: 3em;    
 }
 .fonte250 {
     font-size: 2.5em;
 }
-.cinza { /*Classe CINZA pertence somente o H2 do fonte300 */
+.cinza { 
     color: rgba(203,204,203,1);
 }
 
@@ -33,13 +33,13 @@ body {
     /* justify-content: center; */
     /* align-items: center; */
 }
-/*  Centralizaremos os textos do nosso HEADER  */
+
 .area_chamada {
     text-align: center;
     margin: auto;
     margin-bottom: 150px;
 }
-/* Configuraremos os tamanhos dos nosso textos */
+
 .titulo {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -48,16 +48,31 @@ body {
     text-shadow: 3px 3px 0px rgba(0,0,0,.8);
 }
 
-/*  Configuração do nossos textos */
+
 h2 {
     margin: 0px;
 }
+/*CLASS.PARTE_SUPERIOR é a DIV onde colocaremos nosso BANNER com os ELEMENTOS LOGO/BANNER/direito */
+.parte_superior { 
+    width: 100vw; /*usaremos 100% do nosso RW ou ratewiew e nosso BANNER terá 720px */
+    height: 90px; /*a altura será a mesma do BANNER*/
+    display: flex; /*distribuiiremos nosso ELEMENTOS*/
+    justify-content: center; /*Justificaremos o conteudo da nossa DIV centralizada na LARGURA */
+    align-items: center; /*Alinharemos o conteudo da nossa DIV centralizada na ALTURA no centro da DIV */   
+/* definimos o BANNER com 728px largura e 90 px de altura.*/
+    margin-top: 15px; /*esta Margin aqui, faz com que todos elementos FILHOS fiquem com 15PX afastado da tela. */
+}
+.logo > img { /* "> MAIOR" que dizer "TUDO que tiver dentro ou pertencer" ao IMG */
+    width: 250px;
+}
+
 footer#rodape {
     border-top: 1px solid rgba(234, 238, 239, 1);
     margin-top: auto;
     font-size: 8pt;
     text-align: center;
 }
+
 
 
 

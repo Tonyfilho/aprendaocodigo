@@ -1,53 +1,89 @@
 # standard padrões para estudo em HTML e CSS e JS
 
-Aula 35 Iniciando um novo website . Vimos a Aula anterior como usar uma imagem como fundo e como fazer uma transparencia da mesma.
+Aula 36 Iniciando um novo website . Vimos a Aula anterior como usar uma imagem como fundo e como fazer uma transparencia da mesma.
 
-Nesta Aula planejaremos o nosso CSS para que tudo que for COMUM, ou seja as configurações que pertecem a vários elementos sejam feitas somente um seção do CSS, com isto nosso CSS ficará mais Limpo. Um ex. disto foi que  o fizemos com as CLASS TITULO e SUBTITULO. 
+Nesta Aula veremos como Usar POSITION e DISPLAY: FLEX para posicionar nossos elementos HTML (1a Parte) por o Barner sobre a imagem.
 
-Lembrando que 1 ELEMENTO PODE TER VARIAS CLASSES, ou seja nosso ELEMENTO pode ter a classe COMUM, e pode ter "SUBCLASSES" que farão a difenciação deste ELEMENTOS.
+Neste video faremos a parte de cima do site, onde no nosso mockup
 
-Nesta Aula iremos MUDAR a forma do nosso CSS em relação so que está feito na aula 34 para mostrar como podemos gerir ELEMENTOS com classe iguais e "SUBCLASSEs" Desta forma diminuiremos o tamanho do nosso CSS.Desta forma faremos um planejamento.
 
-ficando assim:
-OBS: Alteremos o nosso HTML, colocando os H2 com CLASS.TITULOS e com "SUBCLASS.fonte350" e outro com "SUBCLASSfonte300"
+Direita: Logo do site
+central : onde colocaremos o banner do site
+Esquerda : Fotografia do Usuario, ou logo do facebook
 
- ERA ASSIM:
+Para trabalharmos este layout temos um elemento a DIREITA, UM NO CENTRO E OUTRO A ESQUERDA.     
 
-.titulo, .subtitulo {
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            line-height: 1em; 
-            font-weight: 400;
-            text-shadow: 3px 3px 0px rgba(0,0,0,.8);
-            }
+se entrarmos no nosso HTML, vemos uma SECTION classe.CHAMADA e HEADER classe.AREA_CHAMADA  e  dentro temos os nossos H2.
 
-FICOU ASSIM:
+Então antes dele, faremos um DIV, o por que não usamos um nome semântico? Por que isto é SEÇÂO do nosso site que fica dentro do HEADER que já semântico, ou seja é uma divisão dentro de uma classe semântica.
 
-.titulo {
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            line-height: 1em; 
-            font-weight: 400;
-            text-shadow: 3px 3px 0px rgba(0,0,0,.8);
+digitaremos assim usando o recurso do ERMMET:
+
+.parte_superior +tab e ficará assim:
+ <div class="parte_superior"></div>
+
+ Aqui dentro criaremos nas 3 divisões.
+ Podemos tb já ir no CSS e definirmos as config.desta classe.
+ O que ja sabemos é: 
+ 1º Que a CAIXA OU DIV.parte_superior oculpa toda a largura do elemento background.
+ 
+ ficando assim:
+
+
+a DIV ficará alinhada e centralizada com ELEMENTO do fundo SECTION
+.parte_superior { 
+                width: 100vw; /*usaremos 100% do nosso RW ou ratewiew e nosso BANNER terá 720px */
+
+                height: 90px; /*a altura será a mesma do BANNER*/
+
+                display: flex; /*distribuiiremos nosso ELEMENTOS*/
+
+                justify-content: center; /*Justificaremos o conteudo da nossa DIV centralizada na LARGURA */
+
+                align-items: center; Alinharemos o conteudo da nossa DIV centralizada na ALTURA no centro da DIV 
+                }
+E dentro desta  DIV.parte_superior
+OBS: Definimos o BANNER com 728px largura e 90 px de altura.
+Dentro da nossa DIV CLASS.PARTE_SUPERIOR criaremos 3 outras DIVS a onde colocaremos nosso elementos:
+        LOGO "esquerdo" aqui colocaremos uma imagem de logo:
+           <div class="logo">
+                <img src="_image/logo.png" alt="LogoTipo do Site">
+           </div>
+
+        Sendo que SRC é o caminho da IMAGEM
+        SENDO que ALT é a descrição alternativa da imagem , que será usada quando a imagem não aparece no HTML. 
+
+Fazendo somente isto e recarregando o nosso site, veremos que a IMAGEM passará ou sairá da DIV, e não é isto que queremos. Isto acontence por estamos usando o FLEX, ou seja o FEX diz: Quero que todas as  imagens fiquem centralizadas na minha DIV.
+
+Para resolver isto, temos que configurar os elementos da CLASS.LOGO que aqui seria o TAMANHO da nossa imagem: 
+
+        
+.logo > img {  " > MAIOR " que dizer "TUDO que tiver dentro ou pertencer" ao IMG 
+         width: 250px; dests forma a imagem ficará com 250PX.
 }
+ Conf. um MARGEN lá no elemento PAI , para baixar nossa imagem. 
 
 
 
-.fonte350 {  /*Colocamos aqui blocos para configurar "SUBCLASSES" do h2 chamada FONTE350 */
-            font-size: 3.5em;
-}
-.fonte300 {  /*Colocamos aqui blocos para configurar "SUBCLASSES" do h2 chamada FONTE300 */
-            font-size: 3em;    
 
-}
+                   BANNER "centro"
 
-Fizemos com as fontes, e agora faremos com as CORES:
-.cinza { /*Classe CINZA pertence somente o H2 do fonte300 */
-        color: rgba(203,204,203,1);
-}
-Com isto nosso TITULO e SUBTITULO estão iguas, agora podemos exluir aquilo que está duplicado.
+Configuraremos nosso 2º ELEMENTO que é o BANNER, faremos da mesma forma criando uma DIV.banner_superior:
+          <div class="banner_superior">
+                <img src="_image/banner_alto.jpeg" alt="Banner Superior do Site">
+         </div>
+Só fazendo isto, veremos nosso ELEMENTOS JUNTOS e CENTRALIZADOS
 
-Com isto, TODO ELEMENTO que queiremos vincular ao tamanho da fonte do TITULO, basta ADICIONARMOS as "subclasses" com o mesmo  nome.
+                 LOGO_FACEBOOK "direito"
+Iremos fazer a 3ª DIV tb usando uma imagem, e podemos pegar esta imagem direto do facebook pela pagina: 
+               https://pt-pt.facebookbrand.com/
 
-Isto torna nosso CSS mais simple e fácil e lá na frente veremos o resultados deste conceito de CSS. Toda a Vez que pensarmos em CSS, pensaremos em uma COMBINAÇÃO DE CLASSES.
+Podemos entrar aqui e escolhe a Midia que queremos, o tipo de Logo, navege e veja as opções. Iremos usar a opção ONLINE
+
+
+
+
+
+
+
 
