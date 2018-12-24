@@ -19,6 +19,22 @@ Então , colocaremos FORA da DIV PARTE_SUPERIOR,as DIVs do LOGO e a DIV do FACEB
 
 Usando POSITION e DISPLAY: FLEX para posicionar nossos elementos HTML (2a Parte)
 
+O que vamos fazer de forma NOVA e é: Independente da largura da NOSSA TELA, Eu quero que o ELEMENTO "LOGO" fique a 15PX do TOPO e a 10PX da MARGEN-LEFT, nosso espaçamento entre o TOPO e BANNER sempre vai aumentar o diminuir, mas o ELEMENTO "LOGO"  ficará FIXO em relação a TELA e a mesma coisa  nossa LOGO DO FACEBOOK da MARGEN-RIGHT.
+
+Então ficaremos assim:
+        .logo_facebook {
+             position: absolute; O elemento ficará com posição absoluta, ou seja fora ou acima da posição do ELEMENTO PAI
+             top: 15px; aparti do TOPO conto 15PX
+             right: 60px; A parti da margem direita conto 60PX
+            
+        }
+        .logo {
+            position: absolute; O elemento ficará com posição absoluta, ou seja fora ou acima da posição do ELEMENTO PAI
+            top: 15px; aparti do TOPO conto 15PX
+            left: 10px; A parti da margem direita conto 10PX
+        }
+        
+
 
 
 
