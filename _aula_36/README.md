@@ -78,7 +78,19 @@ Só fazendo isto, veremos nosso ELEMENTOS JUNTOS e CENTRALIZADOS
 Iremos fazer a 3ª DIV tb usando uma imagem, e podemos pegar esta imagem direto do facebook pela pagina: 
                https://pt-pt.facebookbrand.com/
 
-Podemos entrar aqui e escolhe a Midia que queremos, o tipo de Logo, navege e veja as opções. Iremos usar a opção ONLINE
+Podemos entrar aqui e escolhe a Midia que queremos, o tipo de Logo, navege e veja as opções. Iremos usar a opção ONLINE onde faremos  download do pacote:
+         <div class="logo_facebook">
+                <img src="_image/FB-f-Logo__blue_58.png" alt="Logo do Facebook">
+        </div>
+Quando fazemos isto, vemos os 3 elementos dentro do elemento PAI: <div class="parte_superior"> e com as configurações feitas pelo FLEX no CSS, vemos os 3 elementos dentro do PAI centralizados.
+
+Agora mudaremos a configuração do nosso FLEX, usando o paramentro JUSTIFY-CONTENT: "SPACE-AROUND"; onde espalhará o conteudo do FLEX pelo elemento PAI.:
+        justify-content: space-around; Com o justify-content: space-around; espalharemos o conteudo dentro elemento PAI .
+
+Conforme o MOCKUP nosso BANNER n deveria ficar nesta posição no TOP, mas TB centralizado ,  o BANNER tem que ficar centralizado, a LOGO fixada a esquerda  e a MARCA FACEBOOK fixada a direita. Neste tamanho de tela aparentemente não tem tanta diferença, mas em telas de 2500pixels de largura,  veremos a diferença.
+
+Então, depois de usarmos o DISPLAY:FLEX no PAI , iremos usar POSITION:ABSOLUTE; para pormos estes elementos FILHOs no lugar.
+
 
 
 
