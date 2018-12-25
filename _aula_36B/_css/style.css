@@ -29,9 +29,17 @@ body {
     background-size: cover; 
     background-attachment: fixed; 
     height: 100vh; 
-    display: flex; /*colocamos um display aqui, para configurar o HEADER.area_chamada, fazendo ele flutuar  dentro do nosso SECTION */
+    display: flex; 
     /* justify-content: center; */
     /* align-items: center; */
+}
+.parte_superior { 
+    width: 100vw; 
+    height: 90px; 
+    display: flex;    
+    align-items: center;  
+    justify-content: space-around; 
+    margin-top: 15px; 
 }
 
 .area_chamada {
@@ -47,30 +55,14 @@ body {
     font-weight: 400;
     text-shadow: 3px 3px 0px rgba(0,0,0,.8);
 }
-
-
 h2 {
     margin: 0px;
 }
-/*CLASS.PARTE_SUPERIOR é a DIV onde colocaremos nosso BANNER com os ELEMENTOS LOGO/BANNER/direito */
-.parte_superior { 
-    width: 100vw; /*usaremos 100% do nosso VW ou ratewiew e nosso BANNER terá 720px */
-    height: 90px; /*a altura será a mesma do BANNER*/
-    display: flex; /*distribuiiremos nosso ELEMENTOS*/
-   /* justify-content: center; Justificaremos o conteudo da nossa DIV centralizada na LARGURA */
-    align-items: center; /*Alinharemos o conteudo da nossa DIV centralizada na ALTURA no centro da DIV */   
-    justify-content: space-around; /*Com o justify-content: space-around; espalharemos o conteudo dentro elemento PAI */
-/* definimos o BANNER com 728px largura e 90 px de altura.*/
-    margin-top: 15px; /*esta Margin aqui, faz com que todos elementos FILHOS fiquem com 15PX afastado da tela. */
-}
-.logo > img { /* "> MAIOR" que dizer "TUDO que tiver dentro ou pertencer" ao IMG */
+
+
+.logo > img { 
     width: 250px;
-
 }
-.logo_facebook {
-    
-}
-
 
 footer#rodape {
     border-top: 1px solid rgba(234, 238, 239, 1);
