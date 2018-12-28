@@ -41,44 +41,53 @@ body {
     justify-content: space-around;  
     align-items: center; 
     padding-top: 15px;
-    background-color: chartreuse; 
-}
+  }
 
 .area_chamada {
     text-align: center;
-    margin: auto;
-    margin-bottom: 150px;
+    margin-top: 250px;
+    
 }
 
-.titulo {
+.titulo h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    line-height: 1em; 
+    line-height: 1.1em; 
     font-weight: 400;
     text-shadow: 3px 3px 0px rgba(0,0,0,.8);
 }
-
-
 h2 {
     margin: 0px;
 }
 .logo_facebook {
-    position: absolute; /*O elemento ficará com posição absoluta, ou seja fora ou acima da posição do ELEMENTO PAI*/
+    position: absolute; 
     top: 30px;
-    right: 70px;
+    right: 35px;
+    display: flex;
+    align-items:flex-end /*Alinhamos os texto pelo final do FLEX*/ 
+}
+.boas-vindas {
+    font-weight: bold; /*colocamos aqui um peso para fonte do login e boa vinda*/
+    font-size: 80%; /*Falamos aqui q, temos uma fonte de 80% do tamanho da original */
+    margin-right: 5px; /* colocamos uma margem para afastar a letra da logo do facebook*/
+    text-align: right; /*alinharemos o texto pela direita*/    
 }
 .logo {
-    position: absolute; /*O elemento ficará com posição absoluta, ou seja fora ou acima da posição do ELEMENTO PAI*/
-    top: 10px;
+    position: absolute;
     left: 14px;
+    top: 10px;
 }
-
-.logo > img { /* "> MAIOR" que dizer "TUDO que tiver dentro ou pertencer" ao IMG */
+.logo > img { 
     height: 90px;
+}
+                                /*  Criando uma nova SECTION CHAMADA DE MINIATURAS */
 
+.miniaturas {
+    margin-top: -100px; /*Margem NEGATIVA para subirmos nossa IMG e fazer ele ficar sobre o ELEMENTO anterior*/
 }
 
 
+                                 /*  Criando uma nova FOOTER CHAMADA DE RODAPE */
 
 footer#rodape {
     border-top: 1px solid rgba(234, 238, 239, 1);

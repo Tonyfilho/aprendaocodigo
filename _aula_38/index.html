@@ -1,0 +1,65 @@
+<!-- Parte 38 do curso HTML/CSS 101. Neste vídeo vemos como utilizar o elemento "figure" para posicionar nossas imagens numa página web. -->
+
+
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+<head> 
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> MegaTrailers o Melhor site de filmes da internet</title>
+               
+       <meta property='og:title' content='O que é SEO e como usar dentro da página web' /> 
+       <meta property='og:description' content='Assista os melhores trailers de filmes e jogos e programas de Tv no nosso site. Atualizando frequentimente' /> 
+       <meta property='og:url' content='http://www.megatrailer.com.br' /> 
+       <meta property='og:image' content="_image/cinema.jpg"/> 
+       <meta property='og:type' content='website' /> 
+       <meta property='og:site_name' content='megatrailers' /> 
+
+      
+    <link rel="stylesheet" href="_css/nomalize.css">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="icon" href='_image/clapperboard.png'> 
+    <script  src="_js/" ></script>
+
+</head>
+<body>
+  <!-- <div id="corpo"> -->
+     <section class="chamada"> 
+         <div class="parte_superior">
+                <div class="banner_superior">
+                        <img src="_image/banner_alto.jpeg" alt="Banner Superior do Site">        
+                </div>
+         </div>
+                    <div class="logo">
+                        <img src="_image/logo.png" alt="LogoTipo do Site">
+                    </div>            
+                    <div class="logo_facebook">
+                        <div class="boas-vindas">Login,<br>   Cadastre-se</div>
+                        <img src="_image/FB-f-Logo__blue_58.png" alt="Logo do Facebook">
+                    </div>        
+     <header class="area_chamada">
+                    <h2 class="titulo fonte350">Star Wars</h2>
+                    <h2 class="titulo fonte300 cinza">A New Order</h2>
+    </header>
+    </section> 
+    <section class="miniaturas">  <!--Criamos aqui uma nova section para pormos nossos posters-->
+        <figure>  <!--colocamos aqui a tag FIGURE criarmos nosso banner-->
+            <!-- a tag FIGURE tem valor semantico -->
+            <img src="_image/poster_warcraft.jpg" alt="Warcraft"> <!--colocamos aqui a imagem do poster-->
+            <figcaption>Warcraft</figcaption><!--Onde colocamos o nome do nosso filme -->           
+        </figure>
+
+
+
+    </section>
+
+
+  <!-- </div>     -->
+  <footer id="rodape">
+      <p>By Tony Filho </p> 
+  
+    </footer> 
+</body>
+</html>
