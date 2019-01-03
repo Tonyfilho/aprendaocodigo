@@ -11,15 +11,12 @@ body {
 }
 .fonte350 { 
     font-size: 3.5em;
-    font-family: 'Oswald', sans-serif;
 }
 .fonte300 { 
-    font-size: 3em;  
-    font-family: 'Oswald', sans-serif;  
+    font-size: 3em;    
 }
 .fonte250 {
     font-size: 2.5em;
-    font-family: 'Oswald', sans-serif;
 }
 .cinza { 
     color: rgba(203,204,203,1);
@@ -32,10 +29,6 @@ body {
     background-size: 100% 100%; 
     background-attachment: fixed; 
     height: 100vh; 
-   /* display: flex; colocamos um display aqui, para configurar o HEADER.area_chamada, fazendo ele flutuar  dentro do nosso SECTION */
-    /* justify-content: center;  */
-     /* align-items: center;  */
-     
 }
 .parte_superior { 
     width: 100vw; 
@@ -52,8 +45,8 @@ body {
     
 }
 
-.titulo h2 {
-   
+.titulo h1 {
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     line-height: 1.1em; 
     font-weight: 400;
@@ -67,13 +60,13 @@ h2 {
     top: 30px;
     right: 35px;
     display: flex;
-    align-items:flex-end /*Alinhamos os texto pelo final do FLEX*/ 
+    align-items:flex-end 
 }
 .boas-vindas {
-    font-weight: bold; /*colocamos aqui um peso para fonte do login e boa vinda*/
-    font-size: 80%; /*Falamos aqui q, temos uma fonte de 80% do tamanho da original */
-    margin-right: 5px; /* colocamos uma margem para afastar a letra da logo do facebook*/
-    text-align: right; /*alinharemos o texto pela direita*/    
+    font-weight: bold; 
+    font-size: 80%; 
+    margin-right: 5px; 
+    text-align: right;     
 }
 .logo {
     position: absolute;
@@ -87,14 +80,29 @@ h2 {
 
 .miniaturas {
     margin-top: -100px; /*Margem NEGATIVA para subirmos nossa IMG e fazer ele ficar sobre o ELEMENTO anterior*/
+    }
+
+
+
+
+
+.figuras {
+    display: flex; /*Adionamos uma flex para fazer todos os elementos ficarem horizontal*/
+    flex-wrap: wrap; /*Colocamos o flex-wrap na opção WRAP para fazer a quebra dos elementos quando visto em pagina menores tipo MOBLILE*/
+    justify-content: space-between; /*faremos a distribuição dos elementos de forma que  o mesmo fique JUSTIFICADO com a opção SPACE-BETWEEN ao inves de usar center Visto que temos 2 DIVs para alinhar uma FIGURAS e a outra MENU, desta forma ambas ficarão com o BETWEEN.*/
+    padding: 5%;  /*Esta PADDIN em % faz com que caso a pagina fique MENOR o espaço entre mas imagens AUTO REGULE-SE*/
+    
+   
+
+}
+ figure {
+    margin: 5px;
 }
 
-
-
-
-
-
-
+figcaption {
+    width: 150px;
+    text-align: center;
+}
 
                                  /*  Criando uma nova FOOTER CHAMADA DE RODAPE */
 
